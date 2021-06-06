@@ -12,7 +12,7 @@ const StartGameScreen = props => {
                     <View style={styles.buttonWrapper}>
                         <Button title="reset" onPress={() => {}} />
                     </View>
-                    <View>
+                    <View style={styles.buttonWrapper}>
                         <Button title="confirm" onPress={() => {}} />
                     </View>
                 </View>
@@ -34,7 +34,17 @@ const styles = StyleSheet.create({
     inputContainer : {
         width : 300,
         maxWidth : '80%',
-        alignItems: 'center'
+        alignItems: 'center',
+        padding : 10,
+
+        shadowColor : 'black',
+        shadowOffset : { width : 0, height : 2 },
+        shadowRadius : 6,
+        shadowOpacity : 0.25,
+        backgroundColor : 'white',
+        elevation : 5,
+
+        borderRadius : 10,
     },
     buttonContainer : {
         flexDirection : 'row',
